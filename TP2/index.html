@@ -1,0 +1,68 @@
+<html lang="fr">
+
+<head>
+    <title>Mon premier web component</title>
+    <meta charset="utf-8">
+    <script src="./monLecteurVideo/index.js" type="module"></script>
+</head>
+
+<body>
+    <my-player id="player"
+        src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WeAreGoingOnBullrun.mp4">
+        ></my-player>
+
+
+    <script>
+        const p = document.querySelector("#player");
+        function play() {
+            p.play();
+        }
+    </script>
+    <!--
+    <video id="player" controls
+    src="https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4">
+        <br>
+    </video>
+    <button id="play" onclick="play()">PLAY</button>
+    <button id="pause" onclick="pause()">PAUSE</button>
+    <button onclick="getInfo()">GET INFO</button>
+    <button onclick="avance10s()">+10s</button>
+    <button onclick="vitesse4x()" >Vitesse 4x</button>
+
+
+    <script>
+        let player = document.querySelector("#player");
+
+        player.ontimeupdate = () => {
+            console.log("Temps courant = " + player.currentTime)
+        }
+
+        player.onended = () => {
+            console.log("video terminée");
+        }
+
+        function play() {
+            player.play();
+        }
+
+        function pause() {
+            player.pause();
+        }
+
+        function avance10s() {
+            player.currentTime += 10;
+        }
+
+        function vitesse4x() {
+            player.playbackRate = 4;
+        }
+
+        function getInfo() {
+            console.log("Durée de la vidéo : " + player.duration);
+            console.log("Temps courant : " + player.currentTime);
+        }
+    </script>
+    -->
+</body>
+
+</html>
